@@ -19,7 +19,7 @@ public class Main {
             // User u1 = new User("Vasya", "tasdhs@gmail.com", "fjkhjshsf");
             User u2 = new User("Petya", "ajsdjkfr@gmail.com", "weuirui");
 
-            Product prod1 = new Product("tire", "Toyo", "Taurus 401 Highperformance", "225/45 R17");
+            Product prod1 = new Product("tire", "Toyo", "Taurus 401 Highperformance", "225/45 R17", 1138.0);
             Set<Product> product1 = new HashSet<Product>();
             product1.add(prod1);
             OrderHistory ordHist1 = new OrderHistory(7032017, u2);

@@ -11,6 +11,7 @@
     <modules>
         <module>entity</module>
         <module>webapp</module>
+        <module>Managers</module>
     </modules>
 
     <build>

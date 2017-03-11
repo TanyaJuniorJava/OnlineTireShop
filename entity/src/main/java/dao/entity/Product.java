@@ -19,6 +19,7 @@ public class Product {
     private String brand;
     private String model;
     private String size;
+    private double price;
 
     private Set<Basket> baskets = new HashSet<Basket>();
 
@@ -99,6 +100,17 @@ public class Product {
         this.size = size;
     }
 
+    @Column(name="price")
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+
+
 
     @Override
     public String toString() {
@@ -108,14 +120,16 @@ public class Product {
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
+                ", price='" + price + '\'' +
                 '}';
     }
 
-    public Product(String category, String brand, String model, String size) {
+    public Product(String category, String brand, String model, String size, double price) {
         this.category = category;
         this.brand = brand;
         this.model = model;
         this.size = size;
+        this.price = price;
     }
 
 }
