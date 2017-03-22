@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Tire Shop</title>
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+<!--                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>-->
+                            <li><a href="cart.html"><i class="fa fa-user"></i> My Basket</a></li>
+<!--                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>-->
+                            <li><a href="registration.html"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">UAH </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">UAH</a></li>
+                                    <li><a href="#">USD</a></li>
+<!--                                    <li><a href="#">GBP</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">Russian </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Russian</a></li>
+                                    <li><a href="#">Ukrainian</a></li>
+<!--                                    <li><a href="#">German</a></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="logo">
+                        <h1><a href="index.html">e<span>OnlineTireShop</span></a></h1>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="shopping-item">
+                        <a href="cart.html">Корзина - <span class="cart-amunt">$0</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">0</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End site branding area -->
+    
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li><a href="shop.html">Магазин</a></li>
+                        <li><a href="single-product.html">Товар</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+<!--                        <li><a href="checkout.html">Checkout</a></li>-->
+                        <li><a href="#">Категории</a></li>
+<!--                        <li><a href="#">Others</a></li>-->
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+    
+    <div class="slider-area">
+        <div class="zigzag-bottom"></div>
+        <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
+            
+            <div class="slide-bulletz">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ol class="carousel-indicators slide-indicators">
+                                <li data-target="#slide-list" data-slide-to="0" class="active"></li>
+                                <li data-target="#slide-list" data-slide-to="1"></li>
+                                <li data-target="#slide-list" data-slide-to="2"></li>
+                            </ol>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-one"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2>Добро пожаловать!</h2>
+                                                <p>Нас выбирает тот, кто ценит свое время, бережет автомобиль и хочет недорого купить хорошую авторезину.</p>
+<!--                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ab molestiae minus reiciendis! Pariatur ab rerum, sapiente ex nostrum laudantium.</p>-->
+<!--                                                <a href="" class="readmore">Learn more</a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-two"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2>Добро пожаловать!</h2>
+                                                <p>Нас выбирает тот, кто ценит свое время, бережет автомобиль и хочет недорого купить хорошую авторезину.</p>
+<!--                                                <a href="" class="readmore">Learn more</a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-three"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2>Добро пожаловать!</h2>
+                                                <p>Нас выбирает тот, кто ценит свое время, бережет автомобиль и хочет недорого купить хорошую авторезину.</p>
+<!--                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates necessitatibus dicta recusandae quae amet nobis sapiente explicabo voluptatibus rerum nihil quas saepe, tempore error odio quam obcaecati suscipit sequi.</p>-->
+<!--                                                <a href="" class="readmore">Learn more</a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>        
+    </div> <!-- End slider area -->
+    
+    <div class="promo-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-refresh"></i>
+                        <p>Обслуживание 24/7</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-truck"></i>
+                        <p>Бесплатная доставка</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-lock"></i>
+                        <p>Защищенные платежи</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-gift"></i>
+                        <p>Гарантия 2 года</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End promo area -->
+    
+    <div class="maincontent-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="latest-product">
+                        <h2 class="section-title">Последние новинки</h2>
+                        <div class="product-carousel">
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-1.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Bridgestone Potenza Adrenalin RE003</a></h2>
+                                
+                                <div class="product-carousel-price">
+                                    <ins>₴3462.00</ins> <del>₴3624.00</del>
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-2.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Continental ContiSportContact 3</a></h2>
+                                <div class="product-carousel-price">
+                                    <ins>₴7329.00</ins> <del>₴7926.00</del>
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-3.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Michelin CrossClimate+ (Plus)</a></h2>
+
+                                <div class="product-carousel-price">
+                                    <ins>₴1812.00</ins> <del>₴1925.00</del>
+                                </div>                                 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-4.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Rosava Itegro</a></h2>
+
+                                <div class="product-carousel-price">
+                                    <ins>₴660.00</ins>
+                                </div>                            
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-5.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Lassa Competus H/L</a></h2>
+
+                                <div class="product-carousel-price">
+                                    <ins>₴1581.00</ins> <del>₴1655.00</del>
+                                </div>                                 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/product-6.png" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Добавить в корзину</a>
+                                        <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="single-product.html">Dunlop Sport 270</a></h2>
+
+                                <div class="product-carousel-price">
+                                    <ins>₴3450.00</ins>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End main content area -->
+    
+    <div class="brands-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-wrapper">
+                        <h2 class="section-title">Бренды</h2>
+                        <div class="brand-list">
+                            <img src="img/services_logo__1.png" alt="">
+                            <img src="img/services_logo__2.png" alt="">
+                            <img src="img/services_logo__3.png" alt="">
+                            <img src="img/services_logo__4.png" alt="">
+                            <img src="img/services_logo__5.png" alt="">
+                            <img src="img/services_logo__6.png" alt="">
+                            <img src="img/services_logo__7.png" alt="">
+                            <img src="img/services_logo__8.png" alt="">                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End brands area -->
+    
+    <div class="product-widget-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Топ Продаж</h2>
+                        <a href="" class="wid-view-more">Больше</a>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-1.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Cordiant Off Road</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴2229.00</ins> <del>₴2425.00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-2.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">GoodYear Eagle LS-2</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴3897.00</ins> <del>₴4125.00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-3.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Rosava Itegro</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴660.00</ins>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Просмотренные</h2>
+                        <a href="#" class="wid-view-more">Больше</a>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-3.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Rosava Itegro</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴660.00</ins> 
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-4.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Bridgestone Potenza Adrenalin RE003</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴3462.00</ins> <del>₴3624.00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-1.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Cordiant Off Road</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴2229.00</ins> <del>₴2425.00</del>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Топ Новинок</h2>
+                        <a href="#" class="wid-view-more">Больше</a>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-5.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Dunlop Sport 270</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴3450.00</ins>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-2.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">GoodYear Eagle LS-2</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴3897.00</ins> <del>₴4125.00</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/product-thumb-4.png" alt="" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Bridgestone Potenza Adrenalin RE003</a></h2>
+                            <div class="product-wid-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product-wid-price">
+                                <ins>₴3462.00</ins> <del>₴3624.00</del>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End product widget area -->
+    
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>e<span>OnlineTireShop</span></h2>
+                        <p>Интернет-магазин OnlineTireShop предлагает качественные, надежные и долговечные модели резины, приобрести которые вы можете не выходя из дома. Вы можете подобрать и заказать автомобильные покрышки от известных брендовых производителей с гарантией на один год. Покупайте качественные модели резины в OnlineTireShop и подарите себе свободу движения.</p>
+<!--                        <div class="footer-social">-->
+<!--                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>-->
+<!--                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>-->
+<!--                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>-->
+<!--                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>-->
+<!--                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Навигация для покупателя </h2>
+                        <ul>
+                            <li><a href="#">Мой аккаунт</a></li>
+                            <li><a href="#">История покупок</a></li>
+<!--                            <li><a href="#">Wishlist</a></li>-->
+<!--                            <li><a href="#">Vendor contact</a></li>-->
+                            <li><a href="#">На главную</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="footer-menu">-->
+<!--                        <h2 class="footer-wid-title">Categories</h2>-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">Mobile Phone</a></li>-->
+<!--                            <li><a href="#">Home accesseries</a></li>-->
+<!--                            <li><a href="#">LED TV</a></li>-->
+<!--                            <li><a href="#">Computer</a></li>-->
+<!--                            <li><a href="#">Gadets</a></li>-->
+<!--                        </ul>                        -->
+<!--                    </div>-->
+<!--                </div>-->
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Рассылка новостей</h2>
+                        <p>Подпишитесь на нашу рассылку и получайте эксклюзивные предложения, которые Вы не найдете больше нигде, прямо на Ваш почтовый ящик!</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Введите ваш email">
+                                <input type="submit" value="Подписаться">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer top area -->
+    
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                        <p>&copy; 2017 eOnlineTireShop. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a>+Rosh:)</p>
+                    </div>
+                </div>
+                
+<!--                <div class="col-md-4">-->
+<!--                    <div class="footer-card-icon">-->
+<!--                        <i class="fa fa-cc-discover"></i>-->
+<!--                        <i class="fa fa-cc-mastercard"></i>-->
+<!--                        <i class="fa fa-cc-paypal"></i>-->
+<!--                        <i class="fa fa-cc-visa"></i>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div> <!-- End footer bottom area -->
+   
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
